@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .page-container {
+        background-color: #e7e7e7;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .welcome-container {
+        margin: 20px;
+        padding: 15px;
+        background: white;
+        border: 1px solid #c7c7c7;
+        border-radius: 5px;
+        max-width: 200px;
+      }
+      .welcome-header {
+        margin: 0;
+      }
+      .welcome-description {
+        margin: 0;
+        margin-top: 20px;
+      }
+      .welcome-button-container {
+        margin-top: 15px;
+      }
+      .line-button {
+        width: 100%;
+        background-color: white;
+        border: 1px solid blue;
+        border-radius: 5px;
+        padding: 10px 20px;
+        color: blue;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .line-button:hover {
+        background-color: blue;
+        color: white;
+        text-decoration: underline;
+      }
+      .transparent-button {
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        color: #333;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 4px;
+      }
+      .transparent-button:hover {
+        background-color: rgba(0, 0, 255, 0.1);
+        color: blue;
+        text-decoration: underline;
+      }
+      .section-container {
+        display: flex;
+      }
+      .nav-button {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+        background-color: white;
+        cursor: pointer;
+      }
+      .nav-button:hover {
+        background-color: rgba(0, 0, 255, 0.1);
+        color: blue;
+        text-decoration: underline;
+      }
+      .icon {
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body class="page-container">
+    <div class="section-container">
+      <div class="welcome-container">
+        <h2 class="welcome-header">
+          DEV Community is a community of 1,132,362 amazing developers
+        </h2>
+        <p class="welcome-description">
+          We're a place where coders share, stay up-to-date and grow their
+          careers.
+        </p>
+        <div class="welcome-button-container">
+          <button class="line-button">Create account</button><br />
+          <button class="transparent-button">Log in</button>
+        </div>
+      </div>
+      <div class="welcome-container">
+        <button class="nav-button">
+          <img class="icon" alt="home icon" src="./home.png" width="20" />
+          <p>Home</p>
+        </button>
+        <button class="nav-button">
+          <img alt="podcast icon" src="" />
+          <p>podcast</p>
+        </button>
+        <button class="nav-button">
+          <img alt="video icon" src="" />
+          <p>video</p>
+        </button>
+        <button class="nav-button">
+          <img alt="tags" src="" />
+          <p>tags</p>
+        </button>
+        <button class="nav-button">
+          <img alt="FAQ" src="" />
+          <p>FAQ</p>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
