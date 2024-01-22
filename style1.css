@@ -1,0 +1,498 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* END RESET CSS */
+
+body,
+body * {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 20px;
+  background-image: url(eiffel.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  /* background-position-y: top; */
+}
+
+.p-external {
+  color: rgb(198, 184, 168);
+}
+#p1 {
+  color: rgb(100, 206, 51);
+}
+#p2 {
+  color: rgb(155, 147, 224);
+}
+#p3 {
+  color: hsl(180, 18%, 84%);
+}
+#p4 {
+  color: #d195b1;
+}
+.odd {
+  color: rgb(156, 165, 103);
+}
+.even {
+  color: rgb(214, 153, 118);
+}
+#p5 {
+  color: rgb(139, 218, 159);
+  font-size: 1em;
+  font-weight: 20;
+  font-style: italic;
+  border-top: solid burlywood;
+  border-bottom: dotted rgb(178, 219, 200);
+  border-left: solid rgb(223, 216, 220);
+  border-right: dotted rgb(74, 100, 106);
+  border-radius: 5px;
+  border-width: 5px;
+}
+#h2 {
+  display: inline-block;
+  border: 2px solid rgb(189, 112, 112);
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+#h6 {
+  color: white;
+  font-size: 2em;
+  text-shadow: 3px 3px 5px hsl(0, 44%, 87%), -3px -3px 5px rgb(155, 199, 201);
+}
+
+#box1 {
+  width: 100px;
+  height: 100px;
+  box-shadow: 3px 2px 5px;
+  background-color: rgb(218, 203, 197);
+}
+.box {
+  border: 5px solid;
+  font-size: 2em;
+  padding: 2px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+#box2 {
+  background-color: rgb(111, 225, 175);
+  margin-left: 150px;
+}
+#box3 {
+  background-color: rgb(218, 110, 128);
+  /* margin: auto; */
+}
+#img1 {
+  size: 20px;
+  float: left;
+  margin: 20px;
+  margin-left: 0;
+  margin-top: 0;
+}
+#img2 {
+  float: right;
+  margin: 20px;
+  margin-right: 0;
+  margin-top: 0;
+}
+/* in body border & display=flow-root */
+.justify {
+  text-align: justify;
+}
+.container {
+  border: 2px solid black;
+  margin-top: 20px;
+  padding: 5px;
+}
+#h7 {
+  color: azure;
+  border: 2px solid beige;
+  padding: 2px;
+  height: 50px;
+  overflow: scroll;
+}
+#h8 {
+  color: azure;
+  border: 2px solid beige;
+  padding: 2px;
+  height: 50px;
+  overflow: clip;
+  overflow-clip-margin: 12px;
+}
+#h9 {
+  background-color: beige;
+  height: 100px;
+  width: 100px;
+  display: block;
+  /* visibility: hidden; */
+}
+#h10 {
+  background-color: rgb(193, 192, 222);
+  height: 100px;
+  width: 100px;
+  display: block;
+}
+#h11 {
+  background-color: beige;
+  height: auto;
+  width: auto;
+  float: left;
+  text-align: center;
+  padding: 10px;
+}
+#h12 {
+  background-color: rgb(151, 151, 42);
+  height: auto;
+  width: auto;
+  float: left;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  min-height: 50%;
+}
+#box4 {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(150, 150, 201);
+  position: relative;
+  top: 50px;
+  right: 20px;
+}
+#box5 {
+  height: 100px;
+  width: 100px;
+  background-color: rgb(150, 150, 201);
+  position: sticky;
+  left: 50px;
+  bottom: 0px;
+}
+/* sticky-based on scroll position */
+#box6 {
+  height: 50px;
+  width: 50px;
+  background-color: beige;
+  position: absolute;
+}
+/* absolute <!--positioned to nearest ancestor--> */
+/* static- default position */
+#container1 {
+  border: 2px solid;
+  color: aliceblue;
+}
+#container1 > p {
+  background-color: black;
+}
+/* descendant
+> child 
+~ General sibling
++ Adjacent sibling */
+a:link.v {
+  color: #37d27f;
+  font-size: 1em;
+}
+a:hover.v {
+  color: #e2bbcd;
+  /* font-size: 2em; */
+}
+a:active.v {
+  color: #b5b51d;
+}
+a:visited.v {
+  color: red;
+  font-size: 2em;
+}
+li:hover {
+  background-color: rgb(198, 177, 147);
+}
+li:not(:hover) {
+  background-color: rgb(180, 131, 193);
+}
+li:nth-child(even) {
+  background-color: rgb(241, 147, 147);
+}
+#greetings p {
+  background-color: #b5b51d;
+  padding: 10px;
+  /* display: none; */
+}
+#greetings:hover p {
+  display: block;
+}
+#h13::first-letter {
+  color: #e522cb;
+  font-size: 2em;
+  font-style: italic;
+}
+#p6::first-line {
+  color: #d195b1;
+}
+#p6::selection {
+  color: aqua;
+  background-color: black;
+}
+
+/* _______Fruits */
+:root {
+  --main-bg-color: brown;
+  --apple-color: #ff0800;
+  --orange-color: #ff8000;
+  --banana-color: #ffe135;
+  --hover-brightness: 1.2;
+  --click-brightness: 0.8;
+}
+#fruit li {
+  display: inline-block;
+  border-radius: 5px;
+  cursor: pointer;
+  color: rgb(5, 3, 1);
+  font-size: 2em;
+  margin: 5px 0;
+}
+#fruit li::before {
+  content: "🧺 ";
+}
+#fruit li {
+  list-style: circle;
+}
+#fruit li::marker {
+  content: "✓";
+  color: rgb(44, 213, 97);
+  font-size: 1em;
+}
+#apple {
+  border-radius: 5px;
+  padding: 5px 15px;
+  background-color: var(--apple-color);
+}
+#apple::after {
+  content: " 🍎";
+}
+#apple:hover {
+  filter: brightness(var(--hover-brightness));
+}
+#apple:active {
+  filter: brightness(var(--click-brightness));
+}
+#orange {
+  border-radius: 5px;
+  padding: 5px 15px;
+  background-color: var(--orange-color);
+}
+#orange::after {
+  content: " 🍊";
+}
+#orange:hover {
+  filter: brightness(var(--hover-brightness));
+}
+#orange:active {
+  filter: brightness(var(--click-brightness));
+}
+#banana {
+  border-radius: 5px;
+  padding: 5px 15px;
+  background-color: var(--banana-color);
+}
+#banana::after {
+  content: " 🍌";
+}
+#banana:hover {
+  filter: brightness(var(--hover-brightness));
+}
+#banana:active {
+  filter: brightness(var(--click-brightness));
+}
+/* _______END__Fruits */
+/* pagination */
+#h14 {
+  font-style: none;
+}
+.pagination {
+  text-align: center;
+}
+.pagination a {
+  color: #c5dfd1;
+  font-size: 2em;
+  padding: 10px;
+  display: inline-block;
+}
+.pagination a:hover:not(.active1) {
+  background-color: rgb(7, 53, 7);
+  font-weight: bold;
+}
+.pagination a.active1 {
+  background-color: #d195b1;
+  border-radius: 5px;
+}
+.pagination a:first-child {
+  text-decoration: none;
+  font-weight: bold;
+}
+.pagination a:last-child {
+  text-decoration: none;
+  font-weight: bold;
+}
+/* Dropdown */
+.dropdown {
+  display: inline-block;
+}
+.dropdown button {
+  padding: 5px 10px;
+  color: black;
+  background-color: #c5dfd1;
+  font-size: 25px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown a {
+  color: rgb(114, 154, 189);
+  text-decoration: none;
+  padding: 5px 10px;
+  display: block;
+}
+.dropdown .content {
+  position: absolute;
+  display: none;
+  background-color: rgb(106, 104, 104);
+  min-width: 100px;
+  font-size: 20px;
+}
+.dropdown:hover .content {
+  display: block;
+}
+.dropdown:hover button {
+  background-color: #64d69d;
+}
+.dropdown a:hover {
+  background-color: #d195b1;
+  text-decoration: none;
+}

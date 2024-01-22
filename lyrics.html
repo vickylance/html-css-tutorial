@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>My fav song</title>
     <link rel="icon" type="image.jpeg" href="favicon.jpeg" />
@@ -56,7 +56,7 @@
       href="https://en.wikipedia.org/wiki/Leo_(2023_Indian_film)"
     >
       <video width="500px" controls autoplay loop muted>
-        <source src="leo.mp4" type="video/mp4" />
+        <source src="leo.mp4" type="video/mp4">
       </video>
     </a>
     <br />
@@ -78,5 +78,166 @@
     <h1><span style="background-color: grey">this is a span text</span></h1>
     <h1><div style="background-color: bisque">this is a div text</div></h1>
     <br />
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span style="background-color: grey;"> Non saepe consectetur aperiam eligendi enim ullam laboriosam similique corrupti molestias.</span> Blanditiis tempora veritatis laboriosam veniam? Id necessitatibus deleniti ut error expedita.</P>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <div style="background-color: bisque;"> Veniam reprehenderit corrupti minus nulla consequuntur nesciunt repellat eveniet magni totam, ex enim. Repudiandae, quod cupiditate.</div> Tempore saepe eius rem error. Velit?</p>
+
+    <hr>
+    <br>
+    <h2>Daily routine</h2>
+    <ol>
+      <li>wake up</li>
+      <li>clean up</li>
+      <li>badmitton</li>
+      <li>yoga</li>
+      <li>gardening</li>
+      <li>tea</li>
+      <li>preparing breakfast</li>
+      <li>work</li>
+    </ol>
+    <h2>Fav Authors</h2>
+    <ul>
+      <li>Robin sharma</li>
+      <li>Colleen hoover</li>
+      <li>Paulo coelho</li>
+      <li>Chetan bhagat</li>
+      <ul>
+        <li>Two states</li>
+        <li>Half girlfriend</li>
+      </ul>
+    </ul>
+    <h2>Dogs and details</h2>
+    <dl style="background-color:plum; border: 5px solid;">
+      <dt>German Shepherd</dt>
+      <dd>The German Shepherd, also known in Britain as an Alsatian, is a German breed of working dog of medium to large size.</dd>
+      <dt>Golden Retriever</dt>
+      <dd>The Golden Retriever is a Scottish breed of retriever dog of medium size. It is characterised by a gentle and affectionate nature and a striking golden coat.</dd>
+      <dt>Pomeranian</dt>
+      <dd>The Pomeranian dog, or simply Pomeranian, is a breed of dog of the Spitz type that is named for the Pomerania region in north-west Poland and north-east Germany in Central Europe.</dd>
+    </dl>
+    <br>
+    <h2>List to buy</h2>
+    <table border="1" style="background-color: black;">
+      <tr style="background-color: aquamarine;">
+        <th width="100">Fruits</th>
+        <th width="100">Vegetables</th>
+        <th width="100">Grocery</th>
+        <th width="100">Snacks</th>
+        <th width="100">Households</th>
+        <th width="100">Facecream</th>
+      </tr>
+      <tr style="background-color: aliceblue;" align="center">
+        <th width="100">Apple</th>
+        <th width="100">Carrot</th>
+        <th width="100">Fenugreek</th>
+        <th width="100">Cupcake</th>
+        <th width="100">Chair</th>
+        <th width="100">Sunscreen</th>
+      </tr>
+      <tr style="background-color: antiquewhite;" align="center">
+        <th width="100">banana</th>
+        <th width="100">cauliflower</th>
+        <th width="100">Sugar</th>
+        <th width="100">Buiscuit</th>
+        <th width="100">Table</th>
+        <th width="100">Serum</th>
+      </tr>
+    </table>
+    <br>
+    <h3>Buttons</h3>
+    <a target="_blank" href="https://www.youtube.com/watch?v=V1Pl8CzNzCw">
+     <button style="padding: 10px 20px; margin: 10px; color: rgb(63, 46, 2); background-color: burlywood; border-radius: 10px; border: 1ps solid black; text-decoration: none; cursor: pointer;">Click me</button> 
+    </a>
+    <button width="20px" font-size="20px" style="background-color: burlywood; color: black; border-radius: 10px; cursor:pointer;" onclick="window.open('https://www.google.com', '_blank')">
+      Click me
+    </button>
+    <button onclick="doSomething()" style="background-color: beige; color: brown; font-size: 20px; border: 20px solid black; border-radius: 5px; padding: 30px; margin: 40px; cursor: pointer;">
+      CLICK ME
+    </button>
+    <p id="greeting">Hello</p>
+    <script>
+      function doSomething(){
+        const greetingElement = document.getElementById("greeting");
+        const goodByeMessage = "Goodbye Nive 💔"
+        const helloMessage = "Hello Nive ❤️"
+        // if (greetingElement.innerHTML === goodByeMessage) {
+        //   greetingElement.innerHTML = helloMessage;
+        // } else {
+        //   greetingElement.innerHTML = goodByeMessage;
+        // }
+        greetingElement.innerHTML = greetingElement.innerHTML === goodByeMessage ? helloMessage : goodByeMessage;  // ? true : false
+      }
+    </script>
+    <hr>
+  <h3>Form filling</h3>
+    <form action="index.php" method="post" enctype="multipart/form-data">
+      <label for="username">Username:</label>
+      <input type="text" id="username" placeholder="XXXX" minlength="6" maxlength="15" required>
+      <br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" minlength="6" maxlength="15" required>
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder=".gmail.com" minlength="10" maxlength="15" required>
+      <br>
+      <label for="number">Phone no:</label>
+      <input type="tel" id="number" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+      <br>
+      <label for="bday">Birthday</label>
+      <input type="date" id="bday">
+      <br>
+      <label for="quantity">Quantity</label>
+      <input type="number" id="quantity" minlength="1" maxlength="99" value="1">
+      <br>
+      <label for="title">title:</label>
+      <input type="radio" id="mr" value="Mr." name="title">
+      <label for="mr">Mr.</label>
+      <input type="radio" id="ms" value="Ms." name="title">
+      <label for="ms">Ms.</label>
+      <input type="radio" id="PhD" value="phD" name="title">
+      <label for="phD">PhD.</label>
+      <br>
+      <label for="payment">Payment</label>
+      <select id="payment">
+        <option value="" selected disabled hidden>Choose here</option>
+        <option value="visa">visa</option>
+        <option value="credit">credit</option>
+        <option value="giftcard">giftcard</option>
+      </select>
+      <br>
+      <label for="subscribe">subscribe</label>
+      <input type="checkbox" id="subscribe">
+      <br>
+      <label for="comment">Comment</label>
+      <textarea id="comment" rows="5" cols="25"></textarea>
+      <br>
+      <label for="file">File</label>
+      <input type="file" id="file" accept="image/jpeg, image/png">
+      <br>
+      <input type="reset">
+      <input type="submit">
+    </form>
+    <hr>
+    <br>
+    <header style="background-color: bisque;">
+      <h1>Html & Css codes</h1>
+      <a href="">Home </a>
+      <a href="">Contact </a>
+      <a href="">Reference </a>
+      <a href="">About Us</a>
+    </header>
+    <main>
+      <h4>Code for header and footer</h4>
+      <image src="images/header footer.png" alt="image"></image>
+      <p>In HTML, a header is text that introduces a page or section. The HTML element represents introductory content, such as a group of navigational aids or introductory content. It can contain some heading elements, but it can also contain other elements, such as a logo, search form, and author name.</p>
+    </main>
+    <footer style="background-color:rgb(151, 217, 230);">
+      author: Css <br>
+      &copy; copyright reserved <br>
+      <a href="mailto:css@gmail.com">css@gmail.com</a>
+    </footer>
+    <br>
+     <h2><span style="background-color: black; color:whitesmoke;">Welcome to css</span></h2>
+     <a href="http://127.0.0.1:5500/lyrics1.html">click to css</a>
+
   </body>
 </html>
