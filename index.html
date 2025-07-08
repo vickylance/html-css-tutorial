@@ -18,5 +18,28 @@
     <a href="mailto:abcd@smail.com" target="blank">Email me</a>
     <br />
     <a href="tel:9500158226" target="blank">call me</a>
+    <p id="p1"></p>
+    <h1>Welcome</h1>
+    <label>Username</label>
+    <input id="userid" />
+    <button id="userbutton">Submit</button>
+    <script>
+      let fullName = `Bro code`;
+      document.getElementById("p1").textContent = fullName;
+
+      // let userName = window.prompt("What is ur name");
+      // console.log(userName);
+
+      let userName;
+      document.getElementById("userbutton").onclick = function () {
+        userName = document.getElementById("userid").value;
+        console.log(userName);
+
+        let age = window.prompt("How old are you");
+        age = Number(age);
+        age += 1;
+        console.log(age);
+      };
+    </script>
   </body>
 </html>

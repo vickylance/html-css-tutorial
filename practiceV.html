@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="stylev.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="heading">Create a new user</h1>
+      <form action="/action_page.php" name="myForm" method="post">
+        <!-- <label for="fname">First Name</label>
+        <input type="text" id="fname" placeholder="John" name="fname" />
+        <label for="mname">Middle Name</label>
+        <input type="text" id="mname" placeholder="F" name="mname" /> -->
+        <fieldset>
+          <legend>User Details</legend>
+          <!-- <div> -->
+          <div class="input-group">
+            <label for="fname">First</label>
+            <input
+              type="text"
+              id="fname"
+              placeholder="first name"
+              name="fname"
+              required
+            />
+            <label for="lname">Last</label>
+            <input
+              type="text"
+              id="lname"
+              placeholder="last name"
+              name="lname"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="uname">Username</label>
+            <input
+              type="text"
+              id="uname"
+              placeholder="john kennedy"
+              name="uname"
+              minlength="10"
+              maxlength="15"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="mailid">Email Id</label>
+            <input
+              type="email"
+              id="mailid"
+              placeholder="xxx@gmail.com"
+              name="mailid"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="gender">Gender</label>
+            <div class="gender-input">
+              <input type="radio" id="genderm" name="gender" value="Male" />Male
+              <input
+                type="radio"
+                id="genderf"
+                name="gender"
+                value="Female"
+              />Female
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="xxx"
+              name="password"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="rpassword">Repeat Password</label>
+            <input
+              type="password"
+              id="rpassword"
+              placeholder="xxx"
+              name="rpassword"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="dob">DOB</label>
+            <input type="date" id="dob" placeholder="5-08-2015" name="dob" />
+          </div>
+          <div class="input-group">
+            <label for="designetion">Designation </label>
+            <select id="designation" placeholder="select" name="designation">
+              <option>MD</option>
+              <option>Phd</option>
+              <option>Ms</option>
+            </select>
+          </div>
+
+          <!-- </div> -->
+        </fieldset>
+
+        <fieldset>
+          <legend>User Address</legend>
+
+          <div class="input-group">
+            <label for="number">Phone Number</label>
+            <input
+              type="number"
+              id="number"
+              placeholder="123-456-7890"
+              name="number"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="address_line_1">Address Line 1</label>
+            <input
+              type="text"
+              id="address_line_1"
+              placeholder="flat, locality"
+              name="address_line_1"
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="address_line_2">Address Line 2</label>
+            <input
+              type="text"
+              id="address_line_2"
+              placeholder="street name, landmark"
+              name="address_line_2"
+            />
+          </div>
+        </fieldset>
+
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+
+    <script>
+      function validateForm() {
+        let x = document.forms["myForm"]["fname"].value;
+        if (x == "") {
+          alert("Name must be filled out");
+          return false;
+        }
+      }
+
+      const fname = document.querySelector('input[name="fname"]');
+
+      //   fname.addEventListener("invalid", function (event) {
+      //     if (event.target.validity.valueMissing) {
+      //       event.target.setCustomValidity(
+      //         "Please tell us how we should address you."
+      //       );
+      //     }
+      //   });
+
+      //   fname.addEventListener("")
+      fname.addEventListener("input", function (event) {
+        console.log(event.target.value);
+        event.target.setCustomValidity("asdfas");
+      });
+    </script>
+  </body>
+</html>
